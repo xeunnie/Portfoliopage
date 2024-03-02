@@ -74,9 +74,20 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.profileWrap>img{
+.profileWrap .btn{
     height: 100px;
     width: 100px;
+}
+.profileWrap .btn.off{
+    filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%);
+}
+.profileWrap .btn.btn_leftT{
+    background: url("/image/icon/leftTrangle.png") no-repeat;
+    border: 0;
+}
+.profileWrap .btn.btn_rightT{
+    background: url("/image/icon/rightTrangle.png") no-repeat;
+    border: 0;
 }
 .profileTitle{
     display: flex;
@@ -93,9 +104,13 @@ body{
     font-size: 20px;
     font-weight: 400;
 }
+.profileTitle h5{
+    font-size: 17px;
+    font-weight: 400;
+}
 .profileTitle p{
     font-size: 16px;
-    font-weight: 300px;
+    font-weight: 300;
 }
 .category{
     width: 120px;
@@ -109,9 +124,11 @@ body{
     font-weight: 700;
 }
 .profileImg{
+    position: absolute;
     width: 150px;
     height: 210px;
-    margin: 30px;
+    top: 0;
+    right: 30px;
 }
 .profileTriangle{
     height: 70px;
@@ -126,15 +143,13 @@ body{
     justify-content: center;
     gap: 25px;
 }
-.profileBoxWrap>img{
-    height: 50px;
-}
 .profileBox{
     width: 600px;
     height: 300px;
     box-sizing: border-box;
     background-color: #fff;
     display: flex;
+    background: url("/image/img/Polygon 5.png") no-repeat right bottom;
 }
 
 .boxContents{
@@ -142,6 +157,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
 }
 .boxContents h3{
     font-size: 24px;

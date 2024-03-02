@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="script.js"></script>
+    <title>Profile</title>
 </head>
 <body>
     <div class="introWrap">
@@ -28,14 +29,14 @@
             
             <div class="profileWrap">
                 <div class="profileTitle">
-                    <span><h4>CHLOE CHOI</h4><p>web designer</p></span>
+                    <span><h4>CHLOE CHOI</h4><p>front-end developer</p></span>
                     <div class="category shadowIn">profile</div>
                 </div>
                 <div class="profileBoxWrap">
-                    <img src="image/icon/leftTrangle.png">
+                    <button class="btn btn_leftT" onclick="toggleProfileBox(this, 'left')"></button>
                     <div class="profileBox shadowIn">
                         <div class="boxContents">
-                            <h3>basic information</h4>
+                            <h3>basic information</h3>
                             <div class="boxContentsDetail">
                                 <div>
                                     <span>
@@ -49,7 +50,7 @@
                                 </div>
                                     <span>
                                         <h4>as</h4>
-                                        <p>web designer, web publisher</p>
+                                        <p>web front-end developer</p>
                                     </span>
                                 <div>
                                     <span>
@@ -66,16 +67,104 @@
                                     <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
                                 </span>                        
                             </div>
+                            <div><img class="profileImg" src="image/img/profileimg.png" alt="profile"></div>
                         </div>
-                        <div>
-                            <img class="profileImg" src="image/img/profileimg.png">
-                            <img class="profileTriangle" src="image/img/Polygon 5.png">
+                        <div class="boxContents" style="display: none">
+                            <h3>education</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>university</h4>
+                                        <p>Ajou University</p>
+                                        <p>1st: English</p>
+                                        <p>2nd: Digital Media (double major)</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>english rate</h4>
+                                    <p>TOEIC: 930</p>
+                                </span>
+                                <div>
+                                    <span>
+                                        <h4>phone</h4>
+                                        <p>010-4036-2014</p>
+                                    </span>
+                                    <span>
+                                        <h4>e-mail</h4>
+                                        <p>ramona2014@daum.net</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>location</h4>
+                                    <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_rightT" onclick="toggleProfileBox(this, 'right')"></button>
+                </div>
+            </div>
+
+            <div class="profileWrap">
+                <div class="profileTitle">
+                    <span><h4>CHLOE CHOI</h4><p>web designer</p></span>
+                    <div class="category shadowIn">profile</div>
+                </div>
+                <div class="profileBoxWrap">
+                    <img src="image/icon/leftTrangle.png">
+                    <div class="profileBox shadowIn">
+                        <div class="boxContents">
+                            <h3>front-end career</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>development department</h4>
+                                        <p><h5>Stamper:</h5> chrome extension intern (2022.8~2022.12)</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>spec</h4>
+                                    <p>react, typescript,</p>
+                                </span>
+                                <div>
+                                    <span>
+                                            <h4>link</h4>
+                                            <p><a href="https://github.com/cosmostation/cosmostation-chrome-extension/pull/115">Pull Request</a></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxContents" style="display: none">
+                            <h3>front-end career</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>development</h4>
+                                        <p><h5>Webbizz:</h5> publishing&design&front intern (2023.11~2023.02)</p>
+                                    </span>
+                                </div>
+                                <span>
+                                            <h4>as</h4>
+                                            <p>web designer, web publisher</p>
+                                        </span>
+                                <div>
+                                        <span>
+                                            <h4>phone</h4>
+                                            <p>010-4036-2014</p>
+                                        </span>
+                                    <span>
+                                            <h4>link</h4>
+                                            <p><a href="https://github.com/cosmostation/cosmostation-chrome-extension/pull/115">Pull Request</a></p>
+                                        </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <img src="image/icon/rightTrangle.png">
                 </div>
             </div>
-            
+        </div>
+
         </div>
     </div>
     <footer>
