@@ -82,11 +82,11 @@ body{
     filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%);
 }
 .profileWrap .btn.btn_leftT{
-    background: url("/image/icon/leftTrangle.png") no-repeat;
+    background: url("image/icon/leftTrangle.png") no-repeat;
     border: 0;
 }
 .profileWrap .btn.btn_rightT{
-    background: url("/image/icon/rightTrangle.png") no-repeat;
+    background: url("image/icon/rightTrangle.png") no-repeat;
     border: 0;
 }
 .profileTitle{
