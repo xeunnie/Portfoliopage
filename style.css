@@ -79,7 +79,7 @@ body{
     width: 100px;
 }
 .profileWrap .btn.off{
-    filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%);
+    filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%) opacity(0.3);
 }
 .profileWrap .btn.btn_leftT{
     background: url("image/icon/leftTrangle.png") no-repeat;
@@ -127,7 +127,7 @@ body{
     position: absolute;
     width: 150px;
     height: 210px;
-    top: 0;
+    top: 30px;
     right: 30px;
 }
 .profileTriangle{
@@ -149,20 +149,18 @@ body{
     box-sizing: border-box;
     background-color: #fff;
     display: flex;
-    background: url("/image/img/Polygon 5.png") no-repeat right bottom;
 }
 
 .boxContents{
-    margin: 30px 0 30px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 30px;
     position: relative;
     width: 100%;
+    background: url("/image/img/Polygon 5.png") no-repeat right bottom;
 }
 .boxContents h3{
     font-size: 24px;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 
 .boxContentsDetail{
@@ -180,6 +178,10 @@ body{
 .boxContentsDetail div{
     display: flex;
     gap: 10px;
+}
+
+.secondWrap{
+    margin-top: 0;
 }
 
 footer{
