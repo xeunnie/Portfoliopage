@@ -12,6 +12,10 @@ body{
     flex-direction: column;
     color: #192F3F;
 }
+a{
+    text-decoration: none;
+    color: #192F3F;
+}
 
 .introWrap{
     display: flex;
@@ -82,11 +86,11 @@ body{
     filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%) opacity(0.3);
 }
 .profileWrap .btn.btn_leftT{
-    background: url("image/icon/leftTrangle.png") no-repeat;
+    background: url("../image/icon/leftTrangle.png") no-repeat;
     border: 0;
 }
 .profileWrap .btn.btn_rightT{
-    background: url("image/icon/rightTrangle.png") no-repeat;
+    background: url("../image/icon/rightTrangle.png") no-repeat;
     border: 0;
 }
 .profileTitle{
@@ -113,7 +117,7 @@ body{
     font-weight: 300;
 }
 .category{
-    width: 120px;
+    width: 130px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -180,8 +184,18 @@ body{
     gap: 10px;
 }
 
-.secondWrap{
+.moreWrap{
     margin-top: 0;
+}
+.moreWrap .profileTitle{
+    justify-content: flex-end;
+}
+.seeMore{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 50px;
 }
 
 footer{

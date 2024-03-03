@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/general.css" rel="stylesheet">
     <script src="script.js"></script>
     <title>Profile</title>
 </head>
@@ -19,10 +19,10 @@
             <p>CHLOE CHOI</p>
         </div>
         <div>
-            <p>profile</p>
-            <p>career</p>
-            <p>ability</p>
-            <p>portfolio</p>
+            <a href="./index.html"><p>profile</p></a>
+            <a href="./career.html"><p>career</p></a>
+            <a href="./ability.html"><p>ability</p></a>
+            <a href="./portfolio.html"><p>portfolio</p></a>
         </div>
     </div>
     <div class="contentsWrap shadowBottom">
@@ -96,9 +96,8 @@
                 </div>
             </div>
 
-            <div class="profileWrap secondWrap">
+            <div class="profileWrap moreWrap">
                 <div class="profileTitle">
-                    <span><h4>CHLOE CHOI</h4><p>career</p></span>
                     <div class="category shadowIn">career</div>
                 </div>
                 <div class="profileBoxWrap">
@@ -150,10 +149,127 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="boxContents" style="display: none">
+                            <div class="seeMore">
+                                <a href="./career.html" class="seeMoreText">
+                                    <h4>To See More</h4>
+                                    <p >click here</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <button class="btn btn_rightT" onclick="toggleProfileBox2('right')"></button>
                 </div>
             </div>
+
+            <div class="profileWrap moreWrap">
+                <div class="profileTitle">
+                    <div class="category shadowIn">ability</div>
+                </div>
+                <div class="profileBoxWrap">
+                    <button class="btn btn_leftT" onclick="toggleProfileBox3('left')"></button>
+                    <div class="profileBox shadowIn">
+                        <div class="boxContents">
+                            <h3>development</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>Frameworks</h4>
+                                        <p>React, Vue</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>Language</h4>
+                                    <p>typescript, javascript, scss, html, css</p>
+                                </span>
+                                <div>
+                                    <span>
+                                        <h4>Data</h4>
+                                        <p>Python, C</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxContents" style="display: none">
+                            <h3>Design</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>Design tool</h4>
+                                        <p>Adobe: Illustrator, Photoshop, Indesign</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>UI/UX engineering</h4>
+                                    <p>XD, Figma</p>
+                                </span>
+                                <div>
+                                    <span>
+                                        <h4>Video Edit</h4>
+                                        <p>Adobe: Premiere pro, After Effect</p>
+                                    </span>
+                                    <span>
+                                        <h4>link</h4>
+                                        <p><a href="https://github.com/cosmostation/cosmostation-chrome-extension/pull/115">Pull Request</a></p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxContents" style="display: none">
+                            <div class="seeMore">
+                                <a href="./ability.html" class="seeMoreText">
+                                    <h4>To See More</h4>
+                                    <p >click here</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_rightT" onclick="toggleProfileBox3('right')"></button>
+                </div>
+            </div>
+
+            <div class="profileWrap moreWrap">
+                <div class="profileTitle">
+                    <div class="category shadowIn">portfolio</div>
+                </div>
+                <div class="profileBoxWrap">
+                    <button class="btn btn_leftT" onclick="toggleProfileBox4('left')"></button>
+                    <div class="profileBox shadowIn">
+                        <div class="boxContents">
+                            <h3>projects</h3>
+                            <div class="boxContentsDetail">
+                                <div>
+                                    <span>
+                                        <h4>React project</h4>
+                                        <p>shopping mall</p>
+                                    </span>
+                                </div>
+                                <span>
+                                    <h4>뭐넣지</h4>
+                                    <p>tㅇㄹㄴㅇㄹㄴㅇㄹ</p>
+                                </span>
+                                <div>
+                                    <span>
+                                        <h4>ㅇㄹㄴㅇㄹㄴㅇㄹ</h4>
+                                        <p>ㅇㄹㄴㄹㄴㄹㅇㄴ</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="boxContents" style="display: none">
+                            <div class="seeMore">
+                                <a href="./ability.html" class="seeMoreText">
+                                    <h4>To See More</h4>
+                                    <p >click here</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_rightT" onclick="toggleProfileBox3('right')"></button>
+                </div>
+            </div>
+
         </div>
 
         </div>
