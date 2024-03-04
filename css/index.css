@@ -159,7 +159,7 @@ a{
     padding: 30px;
     position: relative;
     width: 100%;
-    background: url("/image/img/Polygon 5.png") no-repeat right bottom;
+    background: url("../image/img/backgroundPolygon.png") no-repeat right bottom;
 }
 .boxContents h3{
     font-size: 24px;
