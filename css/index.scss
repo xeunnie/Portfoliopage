@@ -48,7 +48,7 @@ button{
     min-width: 600px;
     justify-content: space-around;
     a{
-        height: 50px;
+        height: 40px;
         padding: 0 5px;
         display: flex;
         align-items: center;
@@ -205,6 +205,14 @@ button{
     display: flex;
     gap: 15px;
 }
+.specWrap{
+    flex-direction: column;
+    gap: 5px !important;
+    .spec{
+        gap: 5px !important;
+    }
+}
+
 
 .moreWrap{
     margin-top: 0;
@@ -220,6 +228,11 @@ button{
     padding-left: 50px;
 }
 
+.visitor{
+    position: absolute;
+    right: 20px;
+}
+
 footer{
     height: 50px;
     width: 100%;
@@ -227,7 +240,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-        z-index: -100;
+    z-index: -100;
+    position: relative;
 }
 
 /* effects */
