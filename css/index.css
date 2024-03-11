@@ -1,220 +1,261 @@
-@charset "utf-8";
-
-*{
-    font-family:'Sora';
-    margin: 0;
+* {
+  font-family: "Sora", serif;
+  margin: 0;
 }
 
-
-
-body{
-    display: flex;
-    flex-direction: column;
-    color: #192F3F;
-}
-a{
-    text-decoration: none;
-    color: #192F3F;
+body {
+  display: flex;
+  flex-direction: column;
+  color: #192F3F;
 }
 
-.introWrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height:250px;
-    background: linear-gradient(#BBE2FF, white);
-}
-.introWrap h1{
-    font-size: 32px;
-    font-style: bold;
-}
-.introWrap p{
-    font-size: 20px;
-    font-weight: 400;
+a {
+  text-decoration: none;
+  color: #192F3F;
+  cursor: pointer;
 }
 
-.menu{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    min-width: 600px;
-    justify-content: space-around;
-}
-.menu div{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-.menu img{
-    height: 24px;
-    width: 24px;
+button {
+  cursor: pointer;
 }
 
-
-.contentsWrap{
-    width: 100%;
-    height: 1800px;
-    background: linear-gradient(to top,#BBE2FF, 10%,  white);
-    display: flex;
-    justify-content: center;
+.introWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(#BBE2FF, white);
 }
 
-/* .container{
-    display: flex;
-    align-items: center;
-    height: 500px;
-    gap: 50px; */
-
-
-.profileWrap{
-    width: 7500px;
-    height: 400px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.profileWrap .btn{
-    height: 100px;
-    width: 100px;
-}
-.profileWrap .btn.off{
-    filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%) opacity(0.3);
-}
-.profileWrap .btn.btn_leftT{
-    background: url("../image/icon/leftTrangle.png") no-repeat;
-    border: 0;
-}
-.profileWrap .btn.btn_rightT{
-    background: url("../image/icon/rightTrangle.png") no-repeat;
-    border: 0;
-}
-.profileTitle{
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-}
-.profileTitle span{
-    display: flex;
-    gap: 5px;
-    align-items: flex-end;
-    padding-bottom: 5px;
-}
-.profileTitle h4{
-    font-size: 20px;
-    font-weight: 400;
-}
-.profileTitle h5{
-    font-size: 17px;
-    font-weight: 400;
-}
-.profileTitle p{
-    font-size: 16px;
-    font-weight: 300;
-}
-.category{
-    width: 140px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F9FCFF;
-    border-radius: 20px 20px 0 0;
-    font-size: 24px;
-    font-weight: 700;
-}
-.profileImg{
-    position: absolute;
-    width: 150px;
-    height: 210px;
-    top: 30px;
-    right: 30px;
-}
-.profileTriangle{
-    height: 70px;
-    width: 200px;
-    position: relative;
-    bottom: 46px;
-    left: 28px;
-}
-.profileBoxWrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-.profileBox{
-    width: 600px;
-    height: 300px;
-    box-sizing: border-box;
-    background-color: #fff;
-    display: flex;
+.introWrap h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.boxContents{
-    padding: 30px;
-    position: relative;
-    width: 100%;
-    background: url("../image/img/backgroundPolygon.png") no-repeat right bottom;
-}
-.boxContents h3{
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 10px;
+.introWrap p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.boxContentsDetail{
-    height: 200px;
-    width: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  min-width: 600px;
+  justify-content: space-around;
 }
-.boxContentsDetail p{
-    font-family: 'MaruBuri';
-    font-weight: 300;
-    font-size: 16px;
+.menu a {
+  height: 50px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
 }
-.boxContentsDetail div{
-    display: flex;
-    gap: 10px;
-}
-
-.moreWrap{
-    margin-top: 0;
-}
-.moreWrap .profileTitle{
-    justify-content: flex-end;
-}
-.seeMore{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-size: 20px;
-    padding-left: 50px;
+.menu a:hover {
+  box-shadow: inset 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #DBF0FF;
+  font-weight: bold;
 }
 
-footer{
-    height: 50px;
-    width: 100%;
-    background-color: #F9FCFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        z-index: -100;
+.menu div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.menuTab {
+  gap: 0;
+}
+
+.contentsWrap {
+  width: 100%;
+  height: 1800px;
+  background: linear-gradient(to top, #BBE2FF, 10%, white);
+  display: flex;
+  justify-content: center;
+}
+
+.profileWrap {
+  width: 7500px;
+  height: 400px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileWrap .btn {
+  height: 100px;
+  width: 100px;
+}
+
+.profileWrap .btn.off {
+  filter: invert(76%) sepia(21%) saturate(139%) hue-rotate(169deg) brightness(88%) contrast(92%) opacity(0.3);
+}
+
+.profileWrap .btn.btn_leftT {
+  background: url("../image/icon/leftTrangle.png") no-repeat;
+  border: 0;
+}
+
+.profileWrap .btn.btn_rightT {
+  background: url("../image/icon/rightTrangle.png") no-repeat;
+  border: 0;
+}
+
+.profileTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.profileTitle span {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.profileTitle h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.profileTitle h5 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.profileTitle p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.category {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9FCFF;
+  border-radius: 20px 20px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profileImg {
+  position: absolute;
+  width: 130px;
+  height: 180px;
+  top: 30px;
+  right: 60px;
+}
+
+.profileTriangle {
+  height: 70px;
+  width: 200px;
+  position: relative;
+  bottom: 46px;
+  left: 28px;
+}
+
+.profileBoxWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.profileBox {
+  width: 600px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+}
+
+.boxContents {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  background: url("../image/img/backgroundPolygon.png") no-repeat right bottom;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+}
+
+.off {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.boxContents h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.boxContentsDetail {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boxContentsDetail p {
+  font-family: "MaruBuri", serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.boxContentsDetail div {
+  display: flex;
+  gap: 15px;
+}
+
+.moreWrap {
+  margin-top: 0;
+}
+
+.moreWrap .profileTitle {
+  justify-content: flex-end;
+}
+
+.seeMore {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #F9FCFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -100;
 }
 
 /* effects */
+.shadowBottom {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(38, 53, 65, 0.3137254902);
+}
 
-.shadowBottom{
-    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid #26354150;
-}
-.shadowIn{  
-    box-shadow: inset -3px -3px 3px 0px rgba(255, 255, 255, 0.5), inset 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
-    border: 1px solid #26354150;
-}
+.shadowIn {
+  box-shadow: inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(38, 53, 65, 0.3137254902);
+}/*# sourceMappingURL=index.css.map */
