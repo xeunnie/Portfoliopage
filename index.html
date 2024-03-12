@@ -5,351 +5,363 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/general.css" rel="stylesheet">
-    <link rel="icon" href="../image/favicon/favicon_48x48.png" sizes="48x48">
-	<link rel="icon" href="../image/favicon/favicon_96x96.png" sizes="96x96">
-	<link rel="icon" href="../image/favicon/favicon_144x144.png" sizes="144x144">
-	<link rel="icon" href="../image/favicon/favicon_196x196.png" sizes="196x196">
-    <link rel="shortcut icon" type="image/x-icon" href="../image/favicon/favicon_96x96.png">
+    <link rel="icon" href="./image/favicon/favicon_48x48.png" sizes="48x48">
+	<link rel="icon" href="./image/favicon/favicon_96x96.png" sizes="96x96">
+	<link rel="icon" href="./image/favicon/favicon_144x144.png" sizes="144x144">
+	<link rel="icon" href="./image/favicon/favicon_196x196.png" sizes="196x196">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon/favicon_96x96.png">
     <script src="script.js"></script>
-    <script src="script1.js"></script>
     <title>Profile</title>
 </head>
 <body>
-    <div class="introWrap">
+    <div class="introWrap section">
         <h1>CHLOE CHOI</h1>
-        <p>web developer</p>
+        <p>Front-end developer</p>
     </div>
-    <div class="menu shadowBottom">
-        <div>
-            <a href="https://github.com/xeunnie" class="github" onmouseover="changeText(true)" onmouseout="changeText(false)">CHLOE CHOI</a>
-            <a href="./index.html"><p>HOME</p></a>
+
+    <div class="wrap">
+        <div class="menu">
+            <div>
+                <a href="https://github.com/xeunnie" class="github" onmouseover="changeText(true)" onmouseout="changeText(false)">CHLOE CHOI</a>
+                <a href="./index.html"><p>HOME</p></a>
+            </div>
+            <div class="menuTab">
+                <a href="#profile1"><p>profile</p></a>
+                <a href="#profile2"><p>career</p></a>
+                <a href="#profile3"><p>ability</p></a>
+                <a href="#profile4"><p>portfolio</p></a>
+            </div>
         </div>
-        <div class="menuTab">
-            <a href="./profile.html"><p>profile</p></a>
-            <a href="./career.html"><p>career</p></a>
-            <a href="./ability.html"><p>ability</p></a>
-            <a href="./portfolio.html"><p>portfolio</p></a>
-        </div>
-    </div>
-    <div class="contentsWrap shadowBottom">
-        <div class="container">
-            
-            <div class="profileWrap" id="profile1">
-                <div class="profileTitle">
-                    <span><h4>CHLOE CHOI</h4><p>front-end developer</p></span>
-                    <div class="category shadowIn">profile</div>
-                </div>
-                <div class="profileBoxWrap">
-                    <button class="btn btn_leftT off" onclick="toggleProfileBox(1, 'left')"></button>
-                    <div class="profileBox shadowIn">
-                        <div class="boxContents visible">
-                            <h3>basic information</h3>
-                            <div class="boxContentsDetail">
-                                <div>
+        <div class="contentsWrap">
+            <div class="container">
+                
+                <div class="profileWrap section" id="profile1">
+                    <div class="profileTitle">
+                        <a href="#profile1" class="category on shadowIn">profile</a>
+                        <a href="#profile2" class="category shadowIn">career</a>
+                        <a href="#profile3" class="category shadowIn">ability</a>
+                        <a href="#profile4" class="category shadowIn">portfolio</a>
+                    </div>
+                    <div class="profileBoxWrap">
+                        <button class="btn btn_leftT off" onclick="toggleProfileBox(1, 'left')"></button>
+                        <div class="profileBox shadowIn">
+                            <div class="boxContents visible">
+                                <h3>basic information</h3>
+                                <div class="boxContentsDetail">
+                                    <div>
+                                        <span>
+                                            <h4>name</h4>
+                                            <p>최승은 Choi Seung Eun</p>
+                                        </span>
                                     <span>
-                                        <h4>name</h4>
-                                        <p>최승은 Choi Seung Eun</p>
+                                            <h4>born</h4>
+                                            <p>1998.02.14.</p>
+                                        </span>
+                                    </div>
+                                        <span>
+                                            <h4>as</h4>
+                                            <p>web front-end developer</p>
+                                        </span>
+                                    <div>
+                                        <span>
+                                            <h4>phone</h4>
+                                            <p>010-4036-2014</p>
+                                        </span>
+                                        <span>
+                                            <h4>e-mail</h4>
+                                            <p>ramona2014@daum.net</p>
+                                        </span>
+                                    </div>
+                                    <span>
+                                        <h4>location</h4>
+                                        <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
+                                    </span>                        
+                                </div>
+                                <div><img class="profileImg" src="image/img/profileimg.png" alt="profile"></div>
+                            </div>
+                            <div class="boxContents" >
+                                <h3>education</h3>
+                                <div class="boxContentsDetail">
+                                    <div>
+                                        <span>
+                                            <h4>university</h4>
+                                            <p>Ajou University</p>
+                                            <p>1st: English</p>
+                                            <p>2nd: Digital Media (double major)</p>
+                                        </span>
+                                    </div>
+                                    <span>
+                                        <h4>english rate</h4>
+                                        <p>TOEIC: 930</p>
                                     </span>
-                                <span>
-                                        <h4>born</h4>
-                                        <p>1998.02.14.</p>
+                                    <span>
+                                        <h4>location</h4>
+                                        <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                        <button class="btn btn_rightT" onclick="toggleProfileBox(1,'right')"></button>
+                    </div>
+                </div>
+
+                <div class="profileWrap moreWrap section" id="profile2">
+                    <div class="profileTitle">
+                        <a href="#profile1" class="category shadowIn">profile</a>
+                        <a href="#profile2" class="category on shadowIn">career</a>
+                        <a href="#profile3" class="category shadowIn">ability</a>
+                        <a href="#profile4" class="category shadowIn">portfolio</a>
+                    </div>
+                    <div class="profileBoxWrap">
+                        <button class="btn btn_leftT off" onclick="toggleProfileBox(2,'left')"></button>
+                        <div class="profileBox shadowIn">
+                            <div class="boxContents visible">
+                                <h3>front-end career</h3>
+                                <div class="boxContentsDetail">
+                                    <div>
+                                        <span>
+                                            <h4>Stamper</h4>
+                                            <p><h5>development department</h5> chrome extension intern (2022.8~2022.12)</p>
+                                        </span>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>spec</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
+                                            <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white">
+                                            <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                                <h4>link</h4>
+                                                <a href="https://github.com/cosmostation/cosmostation-chrome-extension/pull/115">Pull Request</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContents">
+                                <h3>front-end career</h3>
+                                <div class="boxContentsDetail">
+                                    <div>
+                                        <span>
+                                            <h4>Webbizz</h4>
+                                            <p><h5>UI/UX Engineering Department</h5> publishing&design&front-end intern (2023.11~2023.02)</p>
+                                        </span>
+                                    </div>
                                     <span>
                                         <h4>as</h4>
-                                        <p>web front-end developer</p>
+                                        <p>web designer, web publisher</p>
                                     </span>
-                                <div>
-                                    <span>
-                                        <h4>phone</h4>
-                                        <p>010-4036-2014</p>
-                                    </span>
-                                    <span>
-                                        <h4>e-mail</h4>
-                                        <p>ramona2014@daum.net</p>
-                                    </span>
-                                </div>
-                                <span>
-                                    <h4>location</h4>
-                                    <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
-                                </span>                        
-                            </div>
-                            <div><img class="profileImg" src="image/img/profileimg.png" alt="profile"></div>
-                        </div>
-                        <div class="boxContents" >
-                            <h3>education</h3>
-                            <div class="boxContentsDetail">
-                                <div>
-                                    <span>
-                                        <h4>university</h4>
-                                        <p>Ajou University</p>
-                                        <p>1st: English</p>
-                                        <p>2nd: Digital Media (double major)</p>
-                                    </span>
-                                </div>
-                                <span>
-                                    <h4>english rate</h4>
-                                    <p>TOEIC: 930</p>
-                                </span>
-                                <span>
-                                    <h4>location</h4>
-                                    <p>경기도 과천시 과천대로 8길 65(벨라르테아파트)</p>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn_rightT" onclick="toggleProfileBox(1,'right')"></button>
-                </div>
-            </div>
-
-            <div class="profileWrap moreWrap" id="profile2">
-                <div class="profileTitle">
-                    <div class="category shadowIn">career</div>
-                </div>
-                <div class="profileBoxWrap">
-                    <button class="btn btn_leftT off" onclick="toggleProfileBox(2,'left')"></button>
-                    <div class="profileBox shadowIn">
-                        <div class="boxContents visible">
-                            <h3>front-end career</h3>
-                            <div class="boxContentsDetail">
-                                <div>
-                                    <span>
-                                        <h4>Stamper</h4>
-                                        <p><h5>development department</h5> chrome extension intern (2022.8~2022.12)</p>
-                                    </span>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>spec</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
-                                        <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white">
-                                        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white">
-                                    </div>
-                                </div>
-                                <div>
-                                    <span>
-                                            <h4>link</h4>
-                                            <a href="https://github.com/cosmostation/cosmostation-chrome-extension/pull/115">Pull Request</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxContents">
-                            <h3>front-end career</h3>
-                            <div class="boxContentsDetail">
-                                <div>
-                                    <span>
-                                        <h4>Webbizz</h4>
-                                        <p><h5>UI/UX Engineering Department</h5> publishing&design&front-end intern (2023.11~2023.02)</p>
-                                    </span>
-                                </div>
-                                <span>
-                                    <h4>as</h4>
-                                    <p>web designer, web publisher</p>
-                                </span>
-                                <div>
-                                    <span>
-                                        <h4>works</h4>
-                                        <p>Repick Renewal, Coupang Safety App, maintenance</p>
-                                    </span>
-                                </div>
-                                <span>
-                                    <h4>link</h4>
                                     <div>
-                                        <a href="https://trendpicker.wwwbiz.kr/main/main.php">repick link</a>
-                                        <a href="https://www.notion.so/f20bfe2332294a60af7d41a4c9dd02de?v=fac1bba112e5438cb68d43c21a78e55b&pvs=4">Notion</a>
+                                        <span>
+                                            <h4>works</h4>
+                                            <p>Repick Renewal, Coupang Safety App, maintenance</p>
+                                        </span>
                                     </div>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="boxContents" >
-                            <div class="seeMore">
-                                <a href="./career.html" class="seeMoreText">
-                                    <h4>To See More</h4>
-                                    <p >click here</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn_rightT" onclick="toggleProfileBox(2,'right')"></button>
-                </div>
-            </div>
-
-            <div class="profileWrap moreWrap" id="profile3">
-                <div class="profileTitle">
-                    <div class="category shadowIn">ability</div>
-                </div>
-                <div class="profileBoxWrap">
-                    <button class="btn btn_leftT off" onclick="toggleProfileBox(3,'left')"></button>
-                    <div class="profileBox shadowIn">
-                        <div class="boxContents visible">
-                            <h3>development</h3>
-                            <div class="boxContentsDetail">
-                                <div class="specWrap">
-                                    <h4>Front-end</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
-                                        <img src="https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D">
-                                        <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white">
-                                        <img src="https://img.shields.io/badge/php-777BB4?style=flat&logo=svelte&logoColor=white">
-                                        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white">
-                                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white">
-                                        <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>Publishing</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/CSS-239120?&style=flat&logo=css3&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Sass-CC6699?&style=flat&logo=sass&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/p5%20js-ED225D?style=flat&logo=p5dotjs&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>Data</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
-                                        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
-                                        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white">
-                                        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white">
-                                        <img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>backend</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white">
-                                        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxContents">
-                            <h3>Design</h3>
-                            <div class="boxContentsDetail">
-                                <div class="specWrap">
-                                    <h4>Collaboration Tool</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/Jira Software-0052CC?style=flat&logo=jirasoftware&logoColor=white"/>
-                                        <img src="https://img.shields.io/badge/Jira Software-0052CC?style=flat&logo=atlassian&logoColor=white"/>
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>Design tool</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=flat&logo=adobe%20illustrator&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat&logo=Adobe%20Photoshop&logoColor=black">
-                                        <img src="https://img.shields.io/badge/Adobe%20InDesign-FF3366?style=flat&logo=Adobe%20InDesign&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>UI/UX engineering</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=Adobe%20XD&logoColor=#FF61F6">
-                                        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Sketch-F7B500?style=flat&logo=sketch&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>Video Edit</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF?style=flat&logo=Adobe%20Premiere%20Pro&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Adobe%20after%20affects-CF96FD?style=flat&logo=Adobe%20after%20effects&logoColor=393665">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxContents">
-                            <h3>Design</h3>
-                            <div class="boxContentsDetail">
-                                <div class="specWrap">
-                                    <h4>Game Engine</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Unity-100000?style=flat&logo=unity&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Roblox-00A2FF?style=flat&logo=robloxstudio&logoColor=white">
-                                    </div>
-                                </div>
-                                <div class="specWrap">
-                                    <h4>3D Graphic Design</h4>
-                                    <div class="spec">
-                                        <img src="https://img.shields.io/badge/Maya Autodesk-37A5CC?&style=flat&logo=autodeskmaya&logoColor=white">
-                                        <img src="https://img.shields.io/badge/Blender-E87D0D?&style=flat&logo=blender&logoColor=white">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boxContents">
-                            <div class="seeMore">
-                                <a href="./ability.html" class="seeMoreText">
-                                    <h4>To See More</h4>
-                                    <p >click here</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn_rightT" onclick="toggleProfileBox(3,'right')"></button>
-                </div>
-            </div>
-
-            <div class="profileWrap moreWrap" id="profile4">
-                <div class="profileTitle">
-                    <div class="category shadowIn">portfolio</div>
-                </div>
-                <div class="profileBoxWrap">
-                    <button class="btn btn_leftT off" onclick="toggleProfileBox(4,'left')"></button>
-                    <div class="profileBox shadowIn">
-                        <div class="boxContents visible">
-                            <h3>projects</h3>
-                            <div class="boxContentsDetail">
-                                <div>
                                     <span>
-                                        <h4>React project</h4>
-                                        <p>shopping mall</p>
-                                    </span>
-                                </div>
-                                <span>
-                                    <h4>뭐넣지</h4>
-                                    <p>tㅇㄹㄴㅇㄹㄴㅇㄹ</p>
-                                </span>
-                                <div>
-                                    <span>
-                                        <h4>ㅇㄹㄴㅇㄹㄴㅇㄹ</h4>
-                                        <p>ㅇㄹㄴㄹㄴㄹㅇㄴ</p>
+                                        <h4>link</h4>
+                                        <div>
+                                            <a href="https://trendpicker.wwwbiz.kr/main/main.php">repick link</a>
+                                            <a href="https://www.notion.so/f20bfe2332294a60af7d41a4c9dd02de?v=fac1bba112e5438cb68d43c21a78e55b&pvs=4">Notion</a>
+                                        </div>
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="boxContents">
-                            <div class="seeMore">
-                                <a href="./ability.html" class="seeMoreText">
-                                    <h4>To See More</h4>
-                                    <p >click here</p>
-                                </a>
+                            <div class="boxContents" >
+                                <div class="seeMore">
+                                    <a href="./career.html" class="seeMoreText">
+                                        <h4>To See More</h4>
+                                        <p >click here</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <button class="btn btn_rightT" onclick="toggleProfileBox(2,'right')"></button>
                     </div>
-                    <button class="btn btn_rightT" onclick="toggleProfileBox(4,'right')"></button>
                 </div>
+
+                <div class="profileWrap moreWrap section" id="profile3">
+                    <div class="profileTitle">
+                        <a href="#profile1" class="category shadowIn">profile</a>
+                        <a href="#profile2" class="category shadowIn">career</a>
+                        <a href="#profile3" class="category on shadowIn">ability</a>
+                        <a href="#profile4" class="category shadowIn">portfolio</a>
+                    </div>
+                    <div class="profileBoxWrap">
+                        <button class="btn btn_leftT off" onclick="toggleProfileBox(3,'left')"></button>
+                        <div class="profileBox shadowIn">
+                            <div class="boxContents visible">
+                                <h3>development</h3>
+                                <div class="boxContentsDetail">
+                                    <div class="specWrap">
+                                        <h4>Front-end</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
+                                            <img src="https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D">
+                                            <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white">
+                                            <img src="https://img.shields.io/badge/php-777BB4?style=flat&logo=svelte&logoColor=white">
+                                            <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white">
+                                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white">
+                                            <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>Publishing</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/CSS-239120?&style=flat&logo=css3&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Sass-CC6699?&style=flat&logo=sass&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/p5%20js-ED225D?style=flat&logo=p5dotjs&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>Data</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+                                            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white">
+                                            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white">
+                                            <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white">
+                                            <img src="https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>backend</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white">
+                                            <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContents">
+                                <h3>Design</h3>
+                                <div class="boxContentsDetail">
+                                    <div class="specWrap">
+                                        <h4>Collaboration Tool</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/Jira Software-0052CC?style=flat&logo=jirasoftware&logoColor=white"/>
+                                            <img src="https://img.shields.io/badge/Jira Software-0052CC?style=flat&logo=atlassian&logoColor=white"/>
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>Design tool</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=flat&logo=adobe%20illustrator&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=flat&logo=Adobe%20Photoshop&logoColor=black">
+                                            <img src="https://img.shields.io/badge/Adobe%20InDesign-FF3366?style=flat&logo=Adobe%20InDesign&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>UI/UX engineering</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Adobe%20XD-470137?style=flat&logo=Adobe%20XD&logoColor=#FF61F6">
+                                            <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Sketch-F7B500?style=flat&logo=sketch&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>Video Edit</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF?style=flat&logo=Adobe%20Premiere%20Pro&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Adobe%20after%20affects-CF96FD?style=flat&logo=Adobe%20after%20effects&logoColor=393665">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContents">
+                                <h3>Design</h3>
+                                <div class="boxContentsDetail">
+                                    <div class="specWrap">
+                                        <h4>Game Engine</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Unity-100000?style=flat&logo=unity&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Roblox-00A2FF?style=flat&logo=robloxstudio&logoColor=white">
+                                        </div>
+                                    </div>
+                                    <div class="specWrap">
+                                        <h4>3D Graphic Design</h4>
+                                        <div class="spec">
+                                            <img src="https://img.shields.io/badge/Maya Autodesk-37A5CC?&style=flat&logo=autodeskmaya&logoColor=white">
+                                            <img src="https://img.shields.io/badge/Blender-E87D0D?&style=flat&logo=blender&logoColor=white">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContents">
+                                <div class="seeMore">
+                                    <a href="./ability.html" class="seeMoreText">
+                                        <h4>To See More</h4>
+                                        <p >click here</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn_rightT" onclick="toggleProfileBox(3,'right')"></button>
+                    </div>
+                </div>
+
+                <div class="profileWrap moreWrap section" id="profile4">
+                    <div class="profileTitle">
+                        <a href="#profile1" class="category shadowIn">profile</a>
+                        <a href="#profile2" class="category shadowIn">career</a>
+                        <a href="#profile3" class="category shadowIn">ability</a>
+                        <a href="#profile4" class="category on shadowIn">portfolio</a>
+                    </div>
+                    <div class="profileBoxWrap">
+                        <button class="btn btn_leftT off" onclick="toggleProfileBox(4,'left')"></button>
+                        <div class="profileBox shadowIn">
+                            <div class="boxContents visible">
+                                <h3>projects</h3>
+                                <div class="boxContentsDetail">
+                                    <div>
+                                        <span>
+                                            <h4>React project</h4>
+                                            <p>shopping mall</p>
+                                        </span>
+                                    </div>
+                                    <span>
+                                        <h4>뭐넣지</h4>
+                                        <p>tㅇㄹㄴㅇㄹㄴㅇㄹ</p>
+                                    </span>
+                                    <div>
+                                        <span>
+                                            <h4>ㅇㄹㄴㅇㄹㄴㅇㄹ</h4>
+                                            <p>ㅇㄹㄴㄹㄴㄹㅇㄴ</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="boxContents">
+                                <div class="seeMore">
+                                    <a href="./ability.html" class="seeMoreText">
+                                        <h4>To See More</h4>
+                                        <p >click here</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn_rightT" onclick="toggleProfileBox(4,'right')"></button>
+                    </div>
+                </div>
+
             </div>
-
-        </div>
-
         </div>
     </div>
-    <footer>
+    <footer class="section">
         <div class="visitor">
             <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fxeunnie.github.io%2Fportfoliopage%2F&count_bg=%23192F3F&title_bg=%23DBF0FF&icon=react.svg&icon_color=%23192F3F&title=hits&edge_flat=false"/></a>
         </div>
         <span>COPYRIGHTⓒ by CHLOE CHOI. ALL RIGHTS RESERVED</span>
         
     </footer>
+    <script src="script1.js"></script>
 </body>
 </html>

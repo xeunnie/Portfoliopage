@@ -5,7 +5,10 @@
     margin: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 body{
     display: flex;
@@ -27,16 +30,17 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:250px;
+    // height:250px;
+    height: 100vh;
     background: linear-gradient(#BBE2FF, white);
 }
 .introWrap h1{
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
 }
 .introWrap p{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .menu{
@@ -44,9 +48,11 @@ button{
     height: 60px;
     display: flex;
     align-items: center;
-    z-index: 10;
     min-width: 600px;
     justify-content: space-around;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.1);
     a{
         height: 40px;
         padding: 0 5px;
@@ -61,6 +67,15 @@ button{
         font-weight: bold;
     }
 }
+
+.menu.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .menu div{
     display: flex;
     gap: 15px;
@@ -74,20 +89,26 @@ button{
 
 .contentsWrap{
     width: 100%;
-    height: 1800px;
+    height: 100%;
     background: linear-gradient(to top,#BBE2FF, 10%,  white);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
 }
 
-
+.section{
+    scroll-snap-align: start;
+    opacity: 0;
+    transition: all 1s;
+}
 .profileWrap{
     width: 7500px;
-    height: 400px;
-    margin-top: 100px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 .profileWrap .btn{
     height: 100px;
@@ -128,7 +149,7 @@ button{
     font-weight: 300;
 }
 .category{
-    width: 140px;
+    width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -137,6 +158,15 @@ button{
     border-radius: 20px 20px 0 0;
     font-size: 24px;
     font-weight: 700;
+    transition: all 0.5s;
+    box-shadow: inset 5px -3px 3px rgba(0,0,0,0.2) !important;
+    &.on{
+        background-color: #DBF0FF;
+        box-shadow: 17px -2px 5px 0px rgba(0,0,0,0.2) !important;
+    }
+    &:hover{
+        background-color: #BBE2FF;
+    }
 }
 .profileImg{
     position: absolute;
@@ -160,7 +190,7 @@ button{
 }
 .profileBox{
     width: 600px;
-    height: 300px;
+    height: 400px;
     box-sizing: border-box;
     background-color: #fff;
     display: flex;
@@ -213,10 +243,6 @@ button{
     }
 }
 
-
-.moreWrap{
-    margin-top: 0;
-}
 .moreWrap .profileTitle{
     justify-content: flex-end;
 }
@@ -251,6 +277,6 @@ footer{
     border-bottom: 1px solid #26354150;
 }
 .shadowIn{  
-    box-shadow: inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
-    border: 1px solid #26354150;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+    
 }
