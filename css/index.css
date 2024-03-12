@@ -1,5 +1,5 @@
 * {
-  font-family: "Sora", serif;
+  font-family: "Sora";
   margin: 0;
 }
 
@@ -174,7 +174,7 @@ button {
 }
 .category.on {
   background-color: #DBF0FF;
-  box-shadow: 17px -2px 5px 0px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 6px -2px 5px 0px rgba(0, 0, 0, 0.2) !important;
 }
 .category:hover {
   background-color: #BBE2FF;
@@ -182,10 +182,14 @@ button {
 
 .profileImg {
   position: absolute;
-  width: 130px;
-  height: 180px;
-  top: 30px;
+  width: 150px;
+  height: 210px;
+  top: 70px;
   right: 60px;
+}
+
+.img2 {
+  filter: drop-shadow(2px 4px 3px #999);
 }
 
 .profileTriangle {
@@ -242,17 +246,18 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .boxContentsDetail p {
-  font-family: "MaruBuri", serif;
+  font-family: "MaruBuri";
   font-weight: 300;
   font-size: 16px;
 }
 
 .boxContentsDetail div {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
 }
 
 .specWrap {
@@ -261,6 +266,12 @@ button {
 }
 .specWrap .spec {
   gap: 5px !important;
+  flex-direction: row;
+}
+
+.flexRow {
+  flex-direction: row !important;
+  gap: 15px;
 }
 
 .moreWrap .profileTitle {
